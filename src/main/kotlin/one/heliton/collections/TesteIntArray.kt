@@ -14,9 +14,9 @@ fun main() {
         println(valor)
     }
 //2 formato
-   /* values.forEach {
+    values.forEach {
         println(it)
-    }*/
+    }
 //3 formato
     values.sort() //ordenar menor para maior
     for (index in values.indices){
