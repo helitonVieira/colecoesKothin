@@ -4,8 +4,10 @@ fun main() {
     val salarios = doubleArrayOf( 1000.65,3500.98,2587.54)
     //salarios.sort()
     //salarios.forEach { println(it) }
-    println("Maior salario: ${salarios.max()}")
-    println("Menor salario: ${salarios.min()}")
+    println("Maior salario: ${salarios.max()}") //antigo
+    println("Maior salario: ${salarios.maxOrNull()}") //recomendado novo
+    println("Menor salario: ${salarios.minOrNull()}")
+    println("Menor salario: ${salarios.min()}") // antigo
     println("Media do salario: ${salarios.average()}")
 
     println("----------filter-------------")
@@ -18,6 +20,6 @@ fun main() {
 
     println( salarios.find {it == 1000.65}) //busca valor expecifico ex: buscar uma conta bancaria null se nao existir
 
-    println( salarios.any {it == 1000.65}) //retorna true ou false 
+    println( salarios.any {it == 1000.65}) //retorna true ou false
 
 }
