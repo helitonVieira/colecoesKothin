@@ -16,7 +16,7 @@ fun main() {
 
     println("----------range salario entre 2000 e 5000 -------------")
      println( salarios.count())
-    println( salarios.count(){it in 2000..0..5000.0}) //qtd de salario entre 2000 e 5000
+    println( salarios.count{it in 2000.0..5000.0}) //qtd de salario entre 2000 e 5000
 
     println( salarios.find {it == 1000.65}) //busca valor expecifico ex: buscar uma conta bancaria null se nao existir
 
